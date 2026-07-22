@@ -297,7 +297,9 @@
     margin-top:26px; padding-top:22px; border-top:1px solid var(--line-faint);
   }
   .why-strip .skills-sub{ margin-bottom:12px; }
-  .check-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(230px,1fr)); gap:12px 28px; }
+  .check-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:12px 28px; }
+  @media (max-width:700px){ .check-grid{ grid-template-columns:repeat(2, 1fr); } }
+  @media (max-width:460px){ .check-grid{ grid-template-columns:1fr; } }
   .check-item{ display:flex; gap:10px; align-items:flex-start; font-size:0.9rem; }
   .check-mark{ font-family:'IBM Plex Mono', monospace; color:var(--ok); flex-shrink:0; margin-top:2px; }
 
@@ -1004,7 +1006,7 @@
   <footer id="contact" class="reveal">
     <div class="dim-divider" style="padding-top:44px; margin-bottom:30px;">
       <div class="tick"></div><div class="rule"></div>
-      <span class="label">Contact</span>
+      <span class="label"><span class="num">02</span>Contact</span>
       <div class="rule"></div><div class="tick"></div>
     </div>
     <div class="footer-grid">
