@@ -467,6 +467,24 @@
   }
   @media (max-width:520px){ .lightbox{ padding:16px; } }
 
+  /* Completed projects list */
+  .cp-list{ list-style:none; border-top:1px solid var(--line-faint); }
+  .cp-list li{
+    display:flex; align-items:baseline; gap:14px; padding:13px 4px;
+    border-bottom:1px solid var(--line-faint); flex-wrap:wrap;
+  }
+  .cp-list .idx{ font-family:'IBM Plex Mono', monospace; color:var(--muted); font-size:0.74rem; width:24px; flex-shrink:0; }
+  .cp-list .cp-name{ font-family:'Space Grotesk', sans-serif; font-weight:600; font-size:0.96rem; }
+  .cp-list .cp-loc{ font-family:'IBM Plex Mono', monospace; font-size:0.76rem; color:var(--muted); }
+  .cp-list .cp-badge{
+    margin-left:auto; font-family:'IBM Plex Mono', monospace; font-size:0.65rem;
+    color:var(--brass); letter-spacing:0.08em; text-transform:uppercase;
+    border:1px solid var(--line); border-radius:999px; padding:2px 9px;
+  }
+  .cp-list .cp-badge-ongoing{
+    color:#7ec8e3; border-color:#3a5f6e;
+  }
+
   /* Education */
   .edu-item{ padding:16px 0; border-bottom:1px solid var(--line-faint); display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; }
   .edu-item:first-child{ padding-top:0; }
@@ -854,6 +872,71 @@
           </div>
         </div>
       </div>
+
+      <div class="fp" style="margin-top:18px;">
+        <div class="fp-top">
+          <div>
+            <span class="fp-tag mono">COMMERCIAL KITCHEN &amp; F&amp;B FIT-OUT</span>
+            <div class="fp-title display">Entrecôte Café de Paris</div>
+            <div class="fp-loc mono">Muscat, Oman</div>
+          </div>
+        </div>
+        <p class="fp-desc">Kitchen documentation package for Entrecôte Café de Paris — dining and back-of-house layout, MEP schedules, and custom stainless steel shop drawings for fabrication.</p>
+        <div class="fp-scope">
+          <span class="fp-chip">Layout Drawings</span>
+          <span class="fp-chip">BOQ</span>
+          <span class="fp-chip">Schedule</span>
+          <span class="fp-chip">Submittals</span>
+          <span class="fp-chip">Shop Drawings</span>
+          <span class="fp-chip">MEP Coordination</span>
+          <span class="fp-chip">Site Inspection</span>
+          <span class="fp-chip">Project Coordination</span>
+        </div>
+        <div class="fp-gallery">
+          <div class="fp-item" data-full="assets/projects/entrecote-cafe-de-paris/01-dining-layout-plan.png" data-cap="Dining & back-of-house layout plan">
+            <img src="assets/projects/entrecote-cafe-de-paris/01-dining-layout-plan.png" alt="Entrecote Cafe de Paris dining and kitchen layout plan" loading="lazy">
+            <span class="fp-cap">Layout Plan</span>
+          </div>
+          <div class="fp-item" data-full="assets/projects/entrecote-cafe-de-paris/02-plumbing-drainage-schedule.png" data-cap="Plumbing & drainage point schedule">
+            <img src="assets/projects/entrecote-cafe-de-paris/02-plumbing-drainage-schedule.png" alt="Plumbing and drainage schedule drawing" loading="lazy">
+            <span class="fp-cap">Plumbing &amp; Drainage</span>
+          </div>
+          <div class="fp-item" data-full="assets/projects/entrecote-cafe-de-paris/03-hot-kitchen-elevations.png" data-cap="Hot kitchen area elevations">
+            <img src="assets/projects/entrecote-cafe-de-paris/03-hot-kitchen-elevations.png" alt="Hot kitchen area elevation drawings" loading="lazy">
+            <span class="fp-cap">Hot Kitchen Elevations</span>
+          </div>
+          <div class="fp-item" data-full="assets/projects/entrecote-cafe-de-paris/04-electrical-schedule-coordination.png" data-cap="Electrical schedule & equipment coordination">
+            <img src="assets/projects/entrecote-cafe-de-paris/04-electrical-schedule-coordination.png" alt="Electrical schedule and coordination drawing" loading="lazy">
+            <span class="fp-cap">Electrical Coordination</span>
+          </div>
+          <div class="fp-item" data-full="assets/projects/entrecote-cafe-de-paris/05-exhaust-hood-shop-drawing.png" data-cap="Exhaust hood area — shop drawing">
+            <img src="assets/projects/entrecote-cafe-de-paris/05-exhaust-hood-shop-drawing.png" alt="Exhaust hood area shop drawing" loading="lazy">
+            <span class="fp-cap">Exhaust Hood Area — Shop Drawing</span>
+          </div>
+          <div class="fp-item" data-full="assets/projects/entrecote-cafe-de-paris/06-storage-rack-shop-drawing.png" data-cap="Storage rack area — shop drawing">
+            <img src="assets/projects/entrecote-cafe-de-paris/06-storage-rack-shop-drawing.png" alt="Storage rack area shop drawing" loading="lazy">
+            <span class="fp-cap">Storage Rack Area — Shop Drawing</span>
+          </div>
+          <div class="fp-item" data-full="assets/projects/entrecote-cafe-de-paris/07-prep-table-overshelf-shop-drawing.png" data-cap="Prep table overshelf area — shop drawing">
+            <img src="assets/projects/entrecote-cafe-de-paris/07-prep-table-overshelf-shop-drawing.png" alt="Prep table overshelf area shop drawing" loading="lazy">
+            <span class="fp-cap">Prep Table Overshelf Area — Shop Drawing</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-sub">Completed Projects</div>
+      <ul class="cp-list">
+        <li><span class="idx">01</span><span class="cp-name">Tom &amp; Serg</span><span class="cp-loc">Abu Dhabi, UAE</span><span class="cp-badge">Completed</span></li>
+        <li><span class="idx">02</span><span class="cp-name">Filli &amp; Bateel</span><span class="cp-loc">Dubai Airport, UAE</span><span class="cp-badge">Completed</span></li>
+        <li><span class="idx">03</span><span class="cp-name">Nozomi</span><span class="cp-loc">Oman</span><span class="cp-badge">Completed</span></li>
+        <li><span class="idx">04</span><span class="cp-name">Entrecôte Café de Paris</span><span class="cp-loc">Muscat, Oman</span><span class="cp-badge">Completed</span></li>
+        <li><span class="idx">05</span><span class="cp-name">Booba World</span><span class="cp-loc">Jumeirah, Dubai, UAE</span><span class="cp-badge cp-badge-ongoing">Ongoing</span></li>
+        <li><span class="idx">06</span><span class="cp-name">Vietnamese</span><span class="cp-loc">Marina Mall, Dubai, UAE</span><span class="cp-badge">Completed</span></li>
+        <li><span class="idx">07</span><span class="cp-name">Qinwan</span><span class="cp-loc">Dubai Mall, UAE</span><span class="cp-badge">Completed</span></li>
+        <li><span class="idx">08</span><span class="cp-name">Drinkit 7-1</span><span class="cp-loc">Dubai Creek Harbour, UAE</span><span class="cp-badge">Completed</span></li>
+        <li><span class="idx">09</span><span class="cp-name">Drinkit 9-2</span><span class="cp-loc">Festival Plaza, Dubai, UAE</span><span class="cp-badge">Completed</span></li>
+        <li><span class="idx">10</span><span class="cp-name">Common Grounds</span><span class="cp-loc">Yas Mall, Abu Dhabi, UAE</span><span class="cp-badge cp-badge-ongoing">Ongoing</span></li>
+      </ul>
 
       <div class="section-sub">Areas of Work</div>
       <div class="proj-grid">
